@@ -32,6 +32,6 @@ test('GET /square?string=hello should return 200 and result property in body (fe
       return response.json();
     })
     .then(rjson => {
-      expect(rjson.result).toBeDefined();
+      expect(rjson.result).toEqual("25");
     });
 });
